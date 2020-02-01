@@ -1,0 +1,12 @@
+            Properties props = System.getProperties();
+            //props.put("jacorb.home", "c:/java/jacorb-3.2/");
+            props.put("org.omg.CORBA.ORBClass", "org.jacorb.orb.ORB");
+            props.put("org.omg.CORBA.ORBSingletonClass",
+                "org.jacorb.orb.ORB");
+            //props.put("jacorb.ior_proy_host", "ec2-52-16-90-111.eu-west-1.compute.amazonaws.com");
+            props.put("jacorb.dns.enable", "on");
+            //props.put("OAIAddr", "52.16.90.111");
+            props.put("OAPort", "5555");
+            //props.put("jacorb.dns.force_resolve", "on");
+            
+            System.setProperties(props);
